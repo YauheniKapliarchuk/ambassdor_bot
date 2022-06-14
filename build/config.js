@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const config_1 = require("@jace1995/config");
+exports.default = {
+    MONGODB_URI: config_1.default('MONGODB_URI'),
+    MONGODB_USERNAME: config_1.default('MONGODB_USERNAME'),
+    MONGODB_PASSWORD: config_1.default('MONGODB_PASSWORD'),
+    MONGODB_DATABASE: config_1.default('MONGODB_DATABASE'),
+    TELEGRAM_BOT_TOKEN: config_1.default('TELEGRAM_BOT_TOKEN'),
+    ADMIN_PASSWORD: config_1.default('ADMIN_PASSWORD'),
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlnLmpzIiwic291cmNlUm9vdCI6InNyYy8iLCJzb3VyY2VzIjpbImNvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFtQztBQUVuQyxrQkFBZTtJQUNiLFdBQVcsRUFBRSxnQkFBRyxDQUFDLGFBQWEsQ0FBQztJQUMvQixnQkFBZ0IsRUFBRSxnQkFBRyxDQUFDLGtCQUFrQixDQUFDO0lBQ3pDLGdCQUFnQixFQUFFLGdCQUFHLENBQUMsa0JBQWtCLENBQUM7SUFDekMsZ0JBQWdCLEVBQUUsZ0JBQUcsQ0FBQyxrQkFBa0IsQ0FBQztJQUN6QyxrQkFBa0IsRUFBRSxnQkFBRyxDQUFDLG9CQUFvQixDQUFDO0lBQzdDLGNBQWMsRUFBRSxnQkFBRyxDQUFDLGdCQUFnQixDQUFDO0NBQ3RDLENBQUMifQ==

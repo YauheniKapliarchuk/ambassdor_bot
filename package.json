@@ -1,0 +1,41 @@
+{
+  "name": "ambassador-bot",
+  "description": "Ambassador Bot",
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/ambassador-club/bot.git"
+  },
+  "dependencies": {
+    "@jace1995/config": "^1.0.0",
+    "@jace1995/telegraf-helpers": "^1.0.2",
+    "@types/bluebird": "^3.5.25",
+    "@types/config": "^0.0.34",
+    "@types/lodash": "^4.14.120",
+    "@types/moment": "^2.13.0",
+    "@types/mongodb": "^3.1.19",
+    "@types/node-fetch": "^2.1.5",
+    "bluebird": "^3.5.3",
+    "config": "^3.0.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "mongodb": "^3.1.13",
+    "node-fetch": "^2.3.0",
+    "telegraf": "^3.27.0",
+    "typescript": "^3.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "ts-node": "^8.0.2"
+  },
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon --exec \"ts-node ./src/index.ts\"",
+    "build": "tsc",
+    "db:mock": "ts-node ./src/test/db-mock.ts",
+    "db:list": "ts-node ./src/test/db-list.ts",
+    "docker:up": "docker-compose -p ambassador -f bin/docker-compose.yml up -d",
+    "docker:stop": "docker-compose -p ambassador -f bin/docker-compose.yml stop"
+  }
+}
